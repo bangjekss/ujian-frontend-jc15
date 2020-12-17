@@ -11,6 +11,8 @@ import { connect } from 'react-redux';
 //   }
 // }
 
+//nambahin comment
+
 const ProductModal = (props) => {
   const { buttonLabel, className } = props;
 
@@ -19,8 +21,8 @@ const ProductModal = (props) => {
   const toggle = () => setModal(!modal);
   // const { productDetails, userID, cartList, email } = this.props;
   // const { stock } = this.props.productDetails;
-  // increaseQty = () => {};
-  // decreaseQty = () => {};
+  // const increaseQty = () => {};
+  // const decreaseQty = () => {};
   return (
     <div>
       <div onClick={toggle}>
