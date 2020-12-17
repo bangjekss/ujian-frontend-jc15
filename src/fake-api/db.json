@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ucok",
+      "email": "ucok@gmail.com",
+      "password": "ucok9098_"
+    },
+    {
+      "id": 2,
+      "username": "jek",
+      "email": "jek@gmail.com",
+      "password": "jek9098_"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Digital Alliance UNICORN GAMING",
+      "categoryID": 1,
+      "price": 700000,
+      "stock": 6,
+      "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2019/7/23/67034112/67034112_7f237251-970b-4e3f-b853-ba2739814060_1000_1000.png"
+    },
+    {
+      "id": 2,
+      "name": "Armagedon Nimitz",
+      "categoryID": 1,
+      "price": 900000,
+      "stock": 5,
+      "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//94/MTA-3438742/armaggeddon_casing-pc-atx-armaggeddon-nimitz-tr5000_full02.jpg"
+    },
+    {
+      "id": 3,
+      "name": "NZXT gaming",
+      "categoryID": 1,
+      "price": 500000,
+      "stock": 5,
+      "image": "https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2019/05/10/276150802.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Armagedon VenusV3",
+      "categoryID": 2,
+      "price": 600000,
+      "stock": 5,
+      "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/5/1/16655158/16655158_7a12b653-cf13-437d-bb24-43cfe4194b08_700_962.png"
+    }
+  ],
+  "cart": [
+    {
+      "name": "Digital Alliance UNICORN GAMING",
+      "qty": 1,
+      "price": 700000,
+      "userID": 1,
+      "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2019/7/23/67034112/67034112_7f237251-970b-4e3f-b853-ba2739814060_1000_1000.png",
+      "id": 1
+    }
+  ],
+  "transaction": []
+}

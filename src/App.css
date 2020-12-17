@@ -1,3 +1,31 @@
+.navText:hover {
+  text-decoration: none;
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245);
+}
+#bgForm {
+  background: url('./sprites/bg-form.png') no-repeat center;
+  background-size: 100% 100%;
+}
+.bgMain {
+  background: url('./sprites/bg-main.jpg') no-repeat center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.formContainer {
+  background-color: rgba(255, 202, 0, 0.8);
+  /* height: 350px; */
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 50px 5px rgba(255, 202, 0, 1);
+}
+.inpForm {
+  border-radius: 25px;
+  background-color: red;
+}
+
 .App {
   text-align: center;
 }

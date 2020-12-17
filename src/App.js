@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import { NavigationBar } from './components';
+import { LoginPage, CartPage, HistoryPage, Home, Coret } from './pages';
+import { keepLogin } from './redux/action';
+import { connect } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+
+  componentDidMount() {
+    const id = localStorage.getItem('id');
+    if (id) {
+      this.props.keepLogin(id);
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <NavigationBar></NavigationBar>
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/login" component={LoginPage}></Route>
+        <Route path="/cart" component={CartPage}></Route>
+        <Route path="/history" component={HistoryPage}></Route>
+        <Route path="/coret" component={Coret}></Route>
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = (state) => {};
+
+export default connect(mapStateToProps, { keepLogin })(App);
